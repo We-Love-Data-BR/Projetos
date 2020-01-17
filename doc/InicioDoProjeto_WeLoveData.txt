@@ -1,0 +1,76 @@
+!!! Informações da base de dados que vamos trabalhar !!!
+Survived (Sobreviveu): 	0 = Não, 1 = Sim
+Pclass (Classe): 		Classe de ingresso 1 = 1º, 2 = 2º, 3 = 3º
+Sex (Sexo): 			Sexo do passageiro
+Age (Idade): 			Idade em anos
+Sibsp: 					Quantidade de irmãos e/ou cônjuges a bordo do Titanic
+Parch: 					Quantidade de pais e/ou crianças a bordo do Titanic
+Ticket (Bilhete): 		Número do bilhete de embarque
+Fare (Tarifa): 			Tarifa paga pelo Passageiro
+Cabin (Cabine): 		Número de cabine
+Embarked (Embarque): 	Porto de Embarque (C = Cherbourg, Q=Queenstown, S = Southampton)
+
+Observações sobre alguns dados
+Pclass (Classe): 	1º = Superior 
+					2º = Médio 
+					3º = inferior
+
+Age (Idade): 		A idade é fracionada se for inferior a 1. Se a idade for estimada, é na forma de xx.5
+
+Sibsp: 				Essa coluna define as relações familiares da seginte forma:
+					Sibling = Irmão, irmã, meio-irmão, irmandade
+					Spouse (Cônjuge) = marido, esposa (amantes e desposados foram ignorados)
+
+Parch: 				Essa coluna define as relações familiares da seguinte forma:
+					Parent (Pais) = mãe, pai
+					Child (Criança) = filha, filho, enteada, enteado
+					Crianças que viajaram apenas com uma babá, parch = 0.
+
+
+Estudo
+1. Qual foi a porcentagem dos passageiros sobreviventes?
+2. Qual era a faixa etária dos passageiros que estavam no Titanic?
+3. Quantas crianças ou adultos sobreviveram?
+4. Quantos sobreviveram (separados por sexo)? (Nova sugestão - Luciano - Já esta no código inicial)
+
+	Código inicial
+	
+	# Bilioteacas
+	import numpy as np
+	import pandas as pd
+	import matplotlib.pyplot as plt
+
+	# Carregar os dados do arquivo cvs
+	titanic = pd.read_csv('full.csv')
+
+	# Entendendo o dataset, número de linhas e colunas
+	print('N. Linhas:', titanic.shape[0])
+	print('N. Colunas:', titanic.shape[1])
+
+	# Entendendo o dataset, visualizar os 5 primeiros e 5 últimos registros (respectivamente)
+	titanic.head()
+	titanic.tail()
+
+	# Entendendo o dataset, tipo de dados
+	titanic.dtypes
+
+	# Entendendo o dataset, quantidade de valores de cada coluna
+	titanic.count()
+
+	# Entendendo o dataset, nome das colunas
+	titanic.columns
+	
+	Limpeza de dados
+	Para esse estudo algumas colunas são dispensáveis, não vamos precisar das seguintes: Ticket, Pclass, Cabin, Fare, PassengerID, SibSp.
+
+	# Funcao para remover as colunas
+	def remove(colunas):
+		for i in range(0, len(colunas)):
+			titanic.drop([colunas[i]],axis = 1, inplace = True)
+		return titanic.head()
+
+	# Relação de colunas que vamos remover
+	colunas = ['Pclass','Fare','Ticket','Cabin','PassengerId','SibSp']
+	
+	# Chama a funcao e passar as colunas que serão removidas
+	remove(colunas)

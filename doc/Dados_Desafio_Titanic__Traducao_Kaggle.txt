@@ -1,0 +1,57 @@
+Dados do Projeto Titanic - Kaggle
+---------------------------------
+Ahoy, bem-vindo ao Kaggle! Você está no lugar certo.
+Esta é a lendária competição do Titanic ML - o melhor, primeiro desafio para você mergulhar nas competições da ML e se 
+familiarizar com o funcionamento da plataforma Kaggle.
+
+A competição é simples: use o aprendizado de máquina para criar um modelo que preveja quais passageiros sobreviveram ao naufrágio do Titanic.
+
+Leia ou assista ao vídeo abaixo para explorar mais detalhes. Quando estiver pronto para começar a competir, clique no botão 
+"Participar da competição para criar uma conta e obter acesso aos dados da competição. Depois, confira o Tutorial Titanic de 
+Alexis Cook, que mostra passo a passo como fazer sua primeira inscrição!
+
+O desafio
+O naufrágio do Titanic é um dos mais infames naufrágios da história.
+
+Em 15 de abril de 1912, durante sua viagem inaugural, o amplamente considerado "inafundável" RMS Titanic afundou após colidir com um iceberg. 
+Infelizmente, não havia barcos salva-vidas suficientes para todos a bordo, resultando na morte de 1502 dos 2224 passageiros e tripulantes.
+
+Embora houvesse algum elemento de sorte envolvido na sobrevivência, parece que alguns grupos de pessoas eram mais propensos a sobreviver 
+do que outros.
+
+Nesse desafio, pedimos que você construa um modelo preditivo que responda à pergunta: “que tipo de pessoas têm maior probabilidade 
+de sobreviver?” Usando dados de passageiros (por exemplo, nome, idade, sexo, classe socioeconômica etc.).
+
+https://www.kaggle.com/alexisbcook/titanic-tutorial
+
+Visão geral de como funcionam as competições do Kaggle
+1. Participe da competição
+Leia sobre a descrição do desafio, aceite as Regras da Competição e obtenha acesso ao conjunto de dados da competição.
+
+2. Comece a trabalhar
+Faça o download dos dados, construa modelos neles localmente ou no Kaggle Kernels (nosso ambiente Jupyter Notebooks 
+personalizável e sem configuração, com GPUs gratuitas) e gere um arquivo de previsão.
+
+3. Faça uma submissão
+Carregue sua previsão como um envio no Kaggle e receba uma pontuação de precisão.
+
+4. Verifique a tabela de classificação
+Veja como seu modelo se classifica em relação a outros Kagglers em nossa tabela de classificação.
+
+5. Melhore sua pontuação
+
+Quais dados vou usar nesta competição?
+Nesta competição, você terá acesso a dois conjuntos de dados semelhantes, que incluem informações sobre passageiros, como nome, 
+idade, sexo, classe socioeconômica etc. Um conjunto de dados é intitulado `train.csv` e o outro é denominado` test.csv` .
+
+O Train.csv conterá os detalhes de um subconjunto dos passageiros a bordo (891 para ser exato) e, mais importante, revelará se 
+eles sobreviveram ou não, também conhecida como "verdade do solo".
+
+O conjunto de dados `test.csv` contém informações semelhantes, mas não divulga a“ verdade básica ”para cada passageiro. 
+É seu trabalho prever esses resultados.
+
+Usando os padrões encontrados nos dados train.csv, preveja se os outros 418 passageiros a bordo (encontrados em test.csv) sobreviveram.
+
+Confira a guia "Dados" para explorar ainda mais os conjuntos de dados. Depois de sentir que criou um modelo competitivo, envie-o ao 
+Kaggle para ver a posição do seu modelo na nossa tabela de líderes contra outros Kagglers.
+

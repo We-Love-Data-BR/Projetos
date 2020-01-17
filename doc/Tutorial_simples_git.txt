@@ -1,0 +1,30 @@
+Link do repositório (Acessar pelo browser)
+https://github.com/We-Love-Data-BR/Projetos
+
+Comando git para clonar
+	Instalar o Git Windows 
+	https://gitforwindows.org/
+	Git-2.24.1.2-64-bit.exe (Next até o fim)
+
+	Crie uma pasta no C:\[git]
+
+	(Exemplo na imagem)
+	Abrir o Git Bash e navegar até a pasta criada e execute o comando abaixo
+	git init
+
+	Crie uma cópia de trabalho em um repositório local executando o comando
+	git clone /caminho/para/o/repositório
+	
+	git clone https://github.com/We-Love-Data-BR/Projetos
+	
+	Agora é só incluir os repectivos código e iniciar os estudos
+	
+	Para incluir pastas e arquivo
+	git add <arquivo ou pasta>
+	
+	Dica: 	Se você digitar "git add ." sem mensionar pasta ou arquivo, o comando vai adicionar todos arquivos e subpastas, 
+			da pasta onde você estiver.
+	
+	Para subir no github
+	git commit -m "comentários das alterações"
+	git push origin master (esse é o branch principal, por enquanto vamos trabalhar só nele)

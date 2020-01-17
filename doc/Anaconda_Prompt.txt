@@ -1,0 +1,10 @@
+Abrir o Jupyter Notebook sem abrir o Anaconda
+
+Selecionar e abrir o Software 
+	Anaconda Prompt
+
+Digite o comando
+	jupyter notebook \pasta desejada\
+	
+Dica: 	Não precisa digitar C:\, somete \ e as pastas onde deseja navegar.
+		ex.: C:\git\Projeto\src\ você pode subistituir por \git\Projeto\src\
